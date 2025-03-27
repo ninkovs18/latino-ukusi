@@ -25,6 +25,18 @@
     <link rel="stylesheet" href="css/slick.css" />
 
     <link href="css/main.css" rel="stylesheet" />
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "RJ6cNFLLTr3WrjLYV",
+        });
+      })();
+    </script>
   </head>
 
   <body>
@@ -92,8 +104,9 @@
           <div class="row">
             <div class="col-lg-10 col-12 header-info">
               <h1>
-                <span class="d-block text-primary">Say hello to us</span>
-                <span class="d-block text-dark">love to hear you</span>
+                <span class="d-block text-primary">Zdravo</span>
+                <span class="d-block text-dark">Hola?</span>
+                <p class="lead mb-4">Reci zdravo ukusima Južne Amerike</p>
               </h1>
             </div>
           </div>
@@ -110,9 +123,9 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-6 col-12">
-              <h2 class="mb-4">Let's <span>begin</span></h2>
+              <h2 class="mb-4">Hajde da <span>počnemo!</span></h2>
 
-              <form class="contact-form me-lg-5 pe-lg-3" role="form">
+              <div class="contact-form me-lg-5 pe-lg-3">
                 <div class="form-floating">
                   <input
                     type="text"
@@ -123,7 +136,7 @@
                     required
                   />
 
-                  <label for="name">Full name</label>
+                  <label for="name">Ime i prezime</label>
                 </div>
 
                 <div class="form-floating my-4">
@@ -137,7 +150,7 @@
                     required
                   />
 
-                  <label for="email">Email address</label>
+                  <label for="email">Email adresa</label>
                 </div>
 
                 <div class="form-floating my-4">
@@ -150,7 +163,7 @@
                     required
                   />
 
-                  <label for="subject">Subject</label>
+                  <label for="subject">Naslov</label>
                 </div>
 
                 <div class="form-floating mb-4">
@@ -163,41 +176,45 @@
                     style="height: 160px"
                   ></textarea>
 
-                  <label for="message">Tell us about the project</label>
+                  <label for="message">Vaša poruka</label>
                 </div>
-
+                <div>
+                  <p id="status-message" style="display: none" class="hidden">
+                    Hvala Vam na poverenju, uskoro cemo Vas kontaktirati! ❤
+                  </p>
+                </div>
                 <div class="col-lg-5 col-6">
-                  <button type="submit" class="form-control">Send</button>
+                  <button id="posalji" type="submit" class="form-control">
+                    Pošalji
+                  </button>
                 </div>
-              </form>
+              </div>
             </div>
 
             <div class="col-lg-6 col-12 mt-5 ms-auto">
               <div class="row">
                 <div class="col-6 border-end contact-info">
-                  <h6 class="mb-3">New Business</h6>
+                  <h6 class="mb-3">Email</h6>
 
-                  <a href="mailto:hello@company.com" class="custom-link">
-                    hello@company.com
+                  <a href="mailto:hello@company.com">
+                    ninkovivan@gmail.com
                     <i class="bi-arrow-right ms-2"></i>
                   </a>
                 </div>
 
                 <div class="col-6 contact-info">
-                  <h6 class="mb-3">Main Studio</h6>
+                  <h6 class="mb-3">Podrška</h6>
 
-                  <a href="mailto:studio@company.com" class="custom-link">
-                    studio@company.com
+                  <a href="mailto:studio@company.com">
+                    podrska@latinoukusi.com
                     <i class="bi-arrow-right ms-2"></i>
                   </a>
                 </div>
 
                 <div class="col-6 border-top border-end contact-info">
-                  <h6 class="mb-3">Our Office</h6>
+                  <h6 class="mb-3">Naša adresa</h6>
 
-                  <p class="text-muted">
-                    Akershusstranda 20, 0150 Oslo, Norway
-                  </p>
+                  <p class="text-muted">Cara Lazara 12/13, Pancevo, Srbija</p>
                 </div>
 
                 <div class="col-6 border-top contact-info">
@@ -233,28 +250,25 @@
         <div class="row">
           <div class="col-lg-3 col-10 me-auto mb-4">
             <h4 class="text-white mb-3">
-              <a href="index.html">Little</a> Fashion
+              <a href="index.html">Latino</a> Ukusi
             </h4>
             <p class="copyright-text text-muted mt-lg-5 mb-4 mb-lg-0">
-              Copyright © 2022 <strong>Little Fashion</strong>
+              Copyright © 2022 <strong>Latino ukusi</strong>
             </p>
             <br />
-            <p class="copyright-text">
-              Designed by
-              <a href="https://www.tooplate.com/" target="_blank">Tooplate</a>
-            </p>
+            <p class="copyright-text"></p>
           </div>
 
           <div class="col-lg-5 col-8">
-            <h5 class="text-white mb-3">Sitemap</h5>
+            <h5 class="text-white mb-3">Mapa sajta</h5>
 
             <ul class="footer-menu d-flex flex-wrap">
               <li class="footer-menu-item">
-                <a href="about.html" class="footer-menu-link">Story</a>
+                <a href="about.html" class="footer-menu-link">O nama</a>
               </li>
 
               <li class="footer-menu-item">
-                <a href="#" class="footer-menu-link">Products</a>
+                <a href="#" class="footer-menu-link">Proizvodi</a>
               </li>
 
               <li class="footer-menu-item">
@@ -266,13 +280,13 @@
               </li>
 
               <li class="footer-menu-item">
-                <a href="#" class="footer-menu-link">Contact</a>
+                <a href="#" class="footer-menu-link">Kontakt</a>
               </li>
             </ul>
           </div>
 
           <div class="col-lg-3 col-4">
-            <h5 class="text-white mb-3">Social</h5>
+            <h5 class="text-white mb-3">Mreže</h5>
 
             <ul class="social-icon">
               <li><a href="#" class="social-icon-link bi-youtube"></a></li>
@@ -287,13 +301,13 @@
         </div>
       </div>
     </footer>
-
-    <!-- JAVASCRIPT FILES -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/Headroom.js"></script>
-    <script src="js/jQuery.headroom.js"></script>
-    <script src="js/slick.min.js"></script>
-    <script src="js/custom.js"></script>
   </body>
 </html>
+
+<!-- JAVASCRIPT FILES -->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/Headroom.js"></script>
+<script src="js/jQuery.headroom.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/custom.js"></script>
