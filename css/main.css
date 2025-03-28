@@ -1063,10 +1063,11 @@ button:focus:not(:focus-visible) {
 
 @media screen and (max-width: 991px) {
   h1 {
-    font-size: 2.5rem;
     margin-bottom: 0;
   }
-
+  .slick-title {
+    font-size: 2.5rem;
+  }
   h2 {
     font-size: 36px;
   }
@@ -1180,7 +1181,7 @@ button:focus:not(:focus-visible) {
 
 @media (max-width: 768px) {
   /* Mobilni */
-  h1 {
+  .slick-title {
     font-size: 2rem;
   }
   .custom-btn {
@@ -1191,7 +1192,8 @@ button:focus:not(:focus-visible) {
 
 @media (max-width: 576px) {
   /* Mali telefoni */
-  h1 {
+
+  .slick-title {
     font-size: 1.7rem;
   }
   .custom-btn {
