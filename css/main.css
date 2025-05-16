@@ -547,7 +547,7 @@ h4 span {
 }
 
 .slick-overlay {
-  background: linear-gradient(to top, #000, transparent 120%);
+  background: linear-gradient(to top, #000, transparent 80%);
   position: absolute;
   top: 0;
   right: 0;
