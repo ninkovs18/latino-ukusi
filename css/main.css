@@ -1055,9 +1055,20 @@ button:focus:not(:focus-visible) {
 /*---------------------------------------
   RESPONSIVE STYLES               
 -----------------------------------------*/
+@media screen and (max-width: 1500px) {
+  .slick-title {
+    font-size: 2.8rem;
+  }
+  h2 {
+    font-size: 2.2rem;
+  }
+}
 @media screen and (max-width: 1200px) {
   h1 {
     font-size: 3rem;
+  }
+  .slick-title {
+    font-size: 2.5rem;
   }
 }
 
@@ -1065,9 +1076,7 @@ button:focus:not(:focus-visible) {
   h1 {
     margin-bottom: 0;
   }
-  .slick-title {
-    font-size: 2.5rem;
-  }
+
   h2 {
     font-size: 36px;
   }
@@ -1187,6 +1196,9 @@ button:focus:not(:focus-visible) {
   .custom-btn {
     font-size: 12px;
     padding: 10px 16px;
+  }
+  .img-none {
+    display: none;
   }
 }
 
