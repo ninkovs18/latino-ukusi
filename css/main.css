@@ -1052,6 +1052,25 @@ button:focus:not(:focus-visible) {
   color: var(--primary-color);
 }
 
+/* style="height: 627px; width: 940px" */
+
+.img-home {
+  width: 940px;
+  height: 627px;
+}
+
+.hero-text {
+  width: 50%;
+}
+
+.img-onama {
+  width: 100%;
+  height: 800px;
+  object-fit: contain;
+}
+.m-onama {
+  margin-top: 100px;
+}
 /*---------------------------------------
   RESPONSIVE STYLES               
 -----------------------------------------*/
@@ -1199,6 +1218,13 @@ button:focus:not(:focus-visible) {
   }
   .img-none {
     display: none;
+  }
+  .img-home {
+    width: 100%;
+    height: 400px;
+  }
+  .hero-text {
+    width: 100%;
   }
 }
 
